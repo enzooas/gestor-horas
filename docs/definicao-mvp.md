@@ -10,7 +10,7 @@ enviá-la e saber, a qualquer momento, quantas horas já foram aproveitadas, o q
 **Fluxo de ponta a ponta:**
 entrada (dados da atividade + nomes dos documentos) → processamento (validações, prazo de 5 dias úteis, conferência de
 documentos, regra de limite da modalidade) → resultado (parecer: deferida/indeferida/cancelada, horas aproveitadas e
-resumo de progresso com a meta de 5%–10% e a regra das 2 modalidades).
+resumo de progresso com a meta de 200h do curso e a regra das 2 modalidades).
 
 **Critérios de pronto (observáveis):**
 - O menu abre com dados fictícios e mostra o resumo de progresso.
