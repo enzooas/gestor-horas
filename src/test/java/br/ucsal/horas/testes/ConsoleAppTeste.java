@@ -22,7 +22,7 @@ public class ConsoleAppTeste {
 
     private final ByteArrayOutputStream buffer = new ByteArrayOutputStream();
     private final PrintStream out = new PrintStream(buffer, true, StandardCharsets.UTF_8);
-    private final GestorHoras gestor = new GestorHoras(new Aluno("Aluno Teste", "T-1", "Curso Teste", 3200),
+    private final GestorHoras gestor = new GestorHoras(new Aluno("Aluno Teste", "T-1", "Curso Teste", 3200, 200),
             new RepositorioEmMemoria(), new RelogioMutavel(LocalDate.of(2026, 11, 16)));
 
     private String rodar(String... entradas) {

@@ -18,8 +18,8 @@ public final class ApresentacaoResumo {
         out.println("--- Resumo de horas complementares ---");
         out.printf("Aluno: %s (matrícula %s) | Curso: %s (%dh)%n",
                 r.aluno().nome(), r.aluno().matricula(), r.aluno().curso(), r.aluno().cargaHorariaCurso());
-        out.printf("Horas aproveitadas: %dh | Meta mínima: %dh (5%%) | Máximo contabilizado: %dh (10%%)%n",
-                r.horasAproveitadas(), r.horasMinimas(), r.horasMaximas());
+        out.printf("Horas aproveitadas: %dh | Meta do curso: %dh (%.2f%% da carga) | Máximo contabilizado: %dh (10%%)%n",
+                r.horasAproveitadas(), r.horasExigidas(), r.aluno().percentualDaCarga(), r.horasMaximas());
         out.println("Progresso da meta: " + barra(r.percentual()) + " " + r.percentual() + "%");
 
         out.printf("Modalidades com horas: %d (mínimo exigido: %d) -> %s%n",

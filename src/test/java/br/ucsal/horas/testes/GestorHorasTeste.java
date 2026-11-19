@@ -26,7 +26,7 @@ public class GestorHorasTeste {
     private final RelogioMutavel relogio = new RelogioMutavel(hoje);
     private final HistoricoEventos historico = new HistoricoEventos();
     private final GestorHoras gestor =
-            new GestorHoras(new Aluno("Aluno Teste", "T-1", "Curso Teste", 3200), new RepositorioEmMemoria(), relogio);
+    		new GestorHoras(new Aluno("Aluno Teste", "T-1", "Curso Teste", 3200, 200), new RepositorioEmMemoria(), relogio);
 
     public GestorHorasTeste() {
         gestor.adicionarOuvinte(historico);
@@ -178,20 +178,20 @@ public class GestorHorasTeste {
         contem(e.getMessage(), "futuro");
     }
 
-    @Teste("resumo: regra das 2 modalidades e meta de 160h")
+    @Teste("resumo: regra das 2 modalidades e meta de 200h")
     public void resumoDuasModalidades() {
         eventoDeferido(20);
         ResumoProgresso um = gestor.resumo();
         igual(1L, um.modalidadesComHoras());
         verdadeiro(!um.cumpreMinimoModalidades(), "com uma modalidade ainda não cumpre o mínimo de 2");
-        igual(160, um.horasMinimas());
-        igual(140, um.horasFaltantes());
+        igual(200, um.horasExigidas());
+        igual(180, um.horasFaltantes());
 
         monitoriaDeferida(90);
         ResumoProgresso dois = gestor.resumo();
         verdadeiro(dois.cumpreMinimoModalidades(), "com duas modalidades cumpre o mínimo");
         igual(110, dois.horasAproveitadas());
-        verdadeiro(!dois.concluido(), "110h ainda não atinge as 160h");
+        verdadeiro(!dois.concluido(), "110h ainda não atinge as 200h");
     }
 
     @Teste("observer: cada mudança de estado vira um evento no histórico")

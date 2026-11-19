@@ -10,6 +10,8 @@ import br.ucsal.horas.regras.LimiteTotal;
 import java.time.LocalDate;
 
 import static br.ucsal.horas.testes.Verificacoes.igual;
+import static br.ucsal.horas.testes.Verificacoes.lanca;
+import static br.ucsal.horas.testes.Verificacoes.verdadeiro;
 
 public class RegrasAproveitamentoTeste {
 
@@ -58,10 +60,19 @@ public class RegrasAproveitamentoTeste {
         igual(15, Modalidade.values().length);
     }
 
-    @Teste("Meta do aluno: 5% mínimo e 10% máximo da carga do curso")
+    @Teste("Meta do aluno: curso de 3200h exige 200h (6,25%) e o máximo contabilizado é 320h (10%)")
     public void metaDoAluno() {
-        Aluno aluno = new Aluno("Teste", "T-1", "Curso", 3200);
-        igual(160, aluno.horasMinimas());
+        Aluno aluno = new Aluno("Teste", "T-1", "Curso", 3200, 200);
+        igual(200, aluno.horasExigidas());
         igual(320, aluno.horasMaximas());
+        verdadeiro(Math.abs(aluno.percentualDaCarga() - 6.25) < 0.001, "200h de 3200h deveria ser 6,25%");
+    }
+
+    @Teste("Meta fora da faixa de 5% a 10% da carga do curso é rejeitada")
+    public void metaForaDaFaixaLegal() {
+        lanca(IllegalArgumentException.class, () -> new Aluno("Teste", "T-1", "Curso", 3200, 159)); // abaixo de 5%
+        lanca(IllegalArgumentException.class, () -> new Aluno("Teste", "T-1", "Curso", 3200, 321)); // acima de 10%
+        new Aluno("Teste", "T-1", "Curso", 3200, 160); // limites exatos são aceitos
+        new Aluno("Teste", "T-1", "Curso", 3200, 320);
     }
 }
