@@ -6,7 +6,7 @@
 Aplicação de console em Java que ajuda o aluno a **registrar, acompanhar e organizar** as solicitações de
 aproveitamento de Atividades Complementares segundo as regras da UCSal (Ato nº 147/2014 e Resolução CONSUN nº 14/2016):
 15 modalidades com seus limites de horas, documentos exigidos por modalidade, prazo de 5 dias úteis para anexar,
-meta de 5%–10% da carga do curso e regra das 2 modalidades. Inclui uma simulação da análise do NDE para demonstrar o ciclo completo.
+meta exigida pelo curso (200h em um curso de 3200h, dentro da faixa legal de 5% a 10% da carga) e regra das 2 modalidades. Inclui uma simulação da análise do NDE para demonstrar o ciclo completo.
 
 ## Problema, público e proposta de valor
 
@@ -66,11 +66,11 @@ ficam em memória (recriados a cada execução, com datas relativas ao dia atual
 ./testar.sh        # Windows: testar.bat
 ```
 
-Saída esperada: `Resultado: 39 passaram, 0 falharam.` (código de saída 0).
+Saída esperada: `Resultado: 40 passaram, 0 falharam.` (código de saída 0).
 
 ## Roteiro curto para reproduzir o fluxo principal (menu interativo)
 
-1. Opção `1`: veja o resumo (80h de 160h; 2 modalidades; 1 solicitação aguardando anexos e 1 em análise).
+1. Opção `1`: veja o resumo (80h de 200h; 2 modalidades; 1 solicitação aguardando anexos e 1 em análise).
 2. Opção `3`: nova solicitação (aceite `s`, escolha `7` Voluntariado, descreva, datas passadas, carga 30 e 30).
 3. Opção `4`: tente anexar `certificado.exe` e veja o erro de arquivo inelegível; depois anexe `certificado.pdf` e `relatorio.pdf`.
 4. Opção `5`: envie para análise. Opção `7`: o NDE julga todas as solicitações em análise.
@@ -120,7 +120,7 @@ docs/           Validação, definição do MVP, declaração de IA e terceiros,
 - Um único aluno por execução; a análise do NDE é uma **simulação** (não substitui o julgamento real da coordenação).
 - Não integra com o portal do aluno nem usa dados institucionais reais.
 - Regras seguem o texto do Ato nº 147/2014 e da Resolução nº 14/2016 fornecidos à equipe; podem mudar na instituição.
-- A carga horária do curso usada na demonstração (3200h) é fictícia.
+- A carga do curso (3200h) e a meta (200h) são as do curso da equipe e ficam em DadosDemonstracao.alunoDemo(); para outro curso, basta alterar esses dois números (a meta é validada contra a faixa de 5% a 10%). O nome e a matrícula do aluno são fictícios.
 
 Próximo passo mais importante: persistência em arquivo e validação com mais alunos reais.
 
