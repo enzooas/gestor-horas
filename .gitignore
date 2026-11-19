@@ -1,2 +1,12 @@
 bin/ 
 .settings/ 
+
+# Saídas de build do gestor-horas
+out/
+*.class
+
+# Segredos: nunca versionar
+.env
+*.pem
+*.key
+credenciais*
