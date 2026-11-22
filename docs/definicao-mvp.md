@@ -2,7 +2,7 @@
 
 **Solução:** Gestor de Horas Complementares
 
-**Usuário principal:** estudante de graduação da UCSal que precisa cumprir as horas complementares.
+**Usuário principal:** estudante de graduação da UCSal que precisa cumprir as horas complementares (validado com estudantes de ADS, Engenharia de Software e Psicologia).
 
 **Resultado principal:** conseguir registrar uma solicitação corretamente (modalidade, datas, cargas, documentos),
 enviá-la e saber, a qualquer momento, quantas horas já foram aproveitadas, o que falta e quais documentos pendem.
@@ -33,7 +33,6 @@ resumo de progresso com a meta de 200h do curso e a regra das 2 modalidades).
 **Maior risco:** o MVP refletir mal as regras da instituição (interpretação do Ato/Resolução) e não ser percebido como útil
 pelo público. Mitigação: regras copiadas dos documentos oficiais e teste com alunos reais (ver `problema-validacao.md`).
 
-**Teste principal:** (1) técnico: suíte automatizada + `--demo`; (2) de valor: observar um aluno concluindo uma solicitação
-no menu sem ajuda e registrar o que o confundiu **[PREENCHER com o resultado real do teste]**.
+**Teste principal:** (1) técnico: suíte automatizada (`./testar.sh` com 40 testes passando) + `./executar.sh --demo` executando o fluxo completo sem erros; (2) de valor: teste de uso observado no menu interativo ainda não realizado pela equipe (até o momento, foi aplicado apenas o formulário estruturado de validação do problema e interesse com 4 estudantes da UCSal em 12/11/2026, registrado em `problema-validacao.md`).
 
 **Limitações conhecidas:** ver seção "Limitações conhecidas" do README.
