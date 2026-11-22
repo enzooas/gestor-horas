@@ -1,19 +1,18 @@
 # Gestor de Horas Complementares
 
 > Projeto POOALAB — Programação Orientada a Objetos Avançada (AA2/TED)
-> Integrantes: **[PREENCHER: nome completo de cada integrante]** — Turma: **[PREENCHER]**
+> Integrantes: Enzo Amaral Santos, Fernando Santos Barbosa, Jessé Lessa Barbosa Machado, João Danilo Silva de Oliveira, João Gabriel Moreira Carvalho Araújo  — Turma: ESW-T1 
 
 Aplicação de console em Java que ajuda o aluno a **registrar, acompanhar e organizar** as solicitações de
 aproveitamento de Atividades Complementares segundo as regras da UCSal (Ato nº 147/2014 e Resolução CONSUN nº 14/2016):
 15 modalidades com seus limites de horas, documentos exigidos por modalidade, prazo de 5 dias úteis para anexar,
-meta exigida pelo curso (200h em um curso de 3200h, dentro da faixa legal de 5% a 10% da carga) e regra das 2 modalidades. Inclui uma simulação da análise do NDE para demonstrar o ciclo completo.
+meta exigida pelo curso e regra das 2 modalidades. Inclui uma simulação da análise do NDE para demonstrar o ciclo completo.
 
 ## Problema, público e proposta de valor
 
-**Público:** estudantes de graduação da UCSal que precisam cumprir horas complementares.
+**Público:** estudantes de graduação da UCSal que precisam cumprir horas complementares (validado com amostra de 4 estudantes dos cursos de ADS, Engenharia de Software e Psicologia).
 **Problema:** as regras são extensas (15 modalidades, tetos diferentes, documentos diferentes, prazos), o que dificulta
-saber quanto já foi aproveitado, o que falta e quais documentos anexar. **[PREENCHER: impacto observado e alternativa atual,
-somente com base nas evidências de `docs/problema-validacao.md`.]**
+saber quanto já foi aproveitado, o que falta e quais documentos anexar. Na validação realizada (`docs/problema-validacao.md`, n=4), observou-se o **impacto** da falta de visibilidade sobre o saldo real aproveitado (respeitando o teto por categoria) e o risco de descobrir apenas perto da formatura a pendência de horas em uma segunda modalidade obrigatória. Como **alternativa atual**, 75% (3 alunos) apenas guardam os certificados em pastas no computador ou celular sem somar as horas e 25% (1 aluno) só consultam o portal da faculdade perto de se formar (0% utilizam planilha própria).
 **Proposta de valor:** mostrar em um só lugar o progresso, o que falta para a meta, os documentos exigidos e os prazos,
 e impedir erros comuns de preenchimento antes do envio.
 
@@ -31,7 +30,6 @@ Detalhes e o que ficou de fora em [`docs/definicao-mvp.md`](docs/definicao-mvp.m
 
 - **JDK 21 ou superior** (`java -version` e `javac -version` devem mostrar 21+).
 - Terminal: Linux/macOS (bash) ou Windows (cmd/PowerShell).
-
 ## Como executar
 
 Linux/macOS:
@@ -109,8 +107,6 @@ docs/           Validação, definição do MVP, declaração de IA e terceiros,
 | **Injeção de dependência (`Clock`)** | `GestorHoras` | Permite testar o prazo de 5 dias úteis sem esperar. |
 | **Reflexão e anotações** | `testes/ExecutorTestes`, `@Teste` | Descobre e executa os testes automaticamente. |
 | **SOLID** | geral | Dependência de interfaces (`RegraAproveitamento`, `RepositorioSolicitacoes`, `Entrada`, `OuvinteStatus`); classes com responsabilidade única. |
-
-**[A equipe deve conseguir explicar cada linha desta tabela na mostra.]**
 
 ## Limitações conhecidas
 
