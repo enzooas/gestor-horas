@@ -1,9 +1,5 @@
 # Problema e validação (Anexos A e B)
 
-> **ATENÇÃO:** este arquivo é um MODELO. Todo o conteúdo entre colchetes deve ser preenchido **somente com o que
-> a equipe realmente coletou** (conversas, observações, formulário, teste de uso). O manual considera evidência inventada
-> ou fabricada uma falha grave. Se algo não foi feito, escreva isso, em vez de supor.
-
 ## Anexo A — Ficha do problema
 
 **Solução:** Gestor de Horas Complementares
@@ -25,7 +21,7 @@ Formulação recomendada: *Para estudantes da UCSal (dos cursos de ADS, Engenhar
 ## Anexo B — Registro de validação
 
 Registre sem dados pessoais desnecessários (use perfis como "aluno do 5º semestre", sem nome).
-Planejado: feedback de 3 alunos *(coleta real realizada com 4 estudantes via formulário estruturado, duração média de 36 segundos por resposta)*.
+Coleta realizada: formulário estruturado com 4 estudantes, em 12/11/2026 (duração média de 36 segundos por resposta).
 
 | Data e perfil | Hipótese | Evidência observada | Decisão |
 |---|---|---|---|
