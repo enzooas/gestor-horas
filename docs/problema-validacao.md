@@ -3,6 +3,7 @@
 ## Anexo A — Ficha do problema
 
 **Solução:** Gestor de Horas Complementares
+
 **Equipe, turma e integrantes:** Turma: ESW-T1 — Integrantes: Enzo Amaral Santos, Fernando Santos Barbosa, Jessé Lessa Barbosa Machado, João Danilo Silva de Oliveira, João Gabriel Moreira Carvalho Araújo
 
 | Campo | Preenchimento |
@@ -16,7 +17,7 @@
 | Evidência | Respostas reais coletadas via formulário online em 12/11/2026 (tempo médio de resposta de 36 segundos), consolidadas nas linhas do Anexo B. |
 | Recorte | Registro e acompanhamento das solicitações + conferência de documentos + progresso da meta (ver `definicao-mvp.md`). |
 
-Formulação recomendada: *Para estudantes da UCSal (dos cursos de ADS, Engenharia de Software e Psicologia), que enfrentam dificuldade em centralizar certificados, calcular o aproveitamento real dentro do teto de cada categoria e controlar a exigência de diferentes modalidades durante o acompanhamento de suas horas ao longo da graduação ou próximo à formatura, a consequência é o desconhecimento do progresso real acumulado e a descoberta tardia de horas pendentes. Hoje, esse público tenta resolver a situação por meio do armazenamento de certificados soltos em pastas no computador/celular sem contabilização ou apenas consultando o portal da faculdade na reta final do curso.*
+*Para estudantes da UCSal (dos cursos de ADS, Engenharia de Software e Psicologia), que enfrentam dificuldade em centralizar certificados, calcular o aproveitamento real dentro do teto de cada categoria e controlar a exigência de diferentes modalidades durante o acompanhamento de suas horas ao longo da graduação ou próximo à formatura, a consequência é o desconhecimento do progresso real acumulado e a descoberta tardia de horas pendentes. Hoje, esse público tenta resolver a situação por meio do armazenamento de certificados soltos em pastas no computador/celular sem contabilização ou apenas consultando o portal da faculdade na reta final do curso.*
 
 ## Anexo B — Registro de validação
 
