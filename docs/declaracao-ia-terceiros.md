@@ -16,7 +16,6 @@ Houve uso de IA? (X) Sim ( ) Não
 |---|---|---|---|
 | Claude | Geração da base do código-fonte Java e dos testes automatizados, a partir dos requisitos e das regras institucionais fornecidos pela equipe | `src/main/java`, `src/test/java`, scripts de compilação, execução e testes | Enzo executou `./testar.sh` (40 testes passando) e `./executar.sh --demo`, e leu o código. Foram feitas pequenas alterações, como mudanças nos dados de demonstração e na regra da UCSal em relação às horas complementares: a faculdade exige de horas complementares 5% a 10% da carga horaria total do curso, alteramos de 160 para 200 horas (o necessário para o curso de BES). Como o curso de BES possui 3200h, 200h equivalem à 6,25% da carga, o que está dentro do limite de 5 e 10%. |
 | Claude | Redação de modelos e rascunhos de documentação: README, definição do MVP, problema e validação, declaração de IA | `README.md`, `docs/` | A equipe substituiu os campos pelos dados reais da pesquisa e conferiu o texto. |
-| Claude | Sugestão de roteiro de fala e de estrutura dos slides do pitch | `docs/pitch.pdf` | [Quem montou o PDF final e o que foi alterado em relação à sugestão.] |
 
 **Observações:** os requisitos do trabalho, as regras institucionais (Ato nº 147/2014 e Resolução CONSUN nº 14/2016) e as
 decisões de escopo foram fornecidos pela equipe. A IA não foi usada para produzir evidências de validação com usuários:
