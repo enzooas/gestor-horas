@@ -66,6 +66,10 @@ ficam em memória (recriados a cada execução, com datas relativas ao dia atual
 
 Saída esperada: `Resultado: 40 passaram, 0 falharam.` (código de saída 0).
 
+## Vídeo de contingência
+
+Gravação do fluxo principal (cerca de 1 min 24 s): [`demo/demo_contingencia.mp4`](demo/demo_contingencia.mp4).
+
 ## Roteiro curto para reproduzir o fluxo principal (menu interativo)
 
 1. Opção `1`: veja o resumo (80h de 200h; 2 modalidades; 1 solicitação aguardando anexos e 1 em análise).
