@@ -20,7 +20,6 @@ Formulação recomendada: *Para estudantes da UCSal (dos cursos de ADS, Engenhar
 
 ## Anexo B — Registro de validação
 
-Registre sem dados pessoais desnecessários (use perfis como "aluno do 5º semestre", sem nome).
 Coleta realizada: formulário estruturado com 4 estudantes, em 12/11/2026 (duração média de 36 segundos por resposta).
 
 | Data e perfil | Hipótese | Evidência observada | Decisão |
