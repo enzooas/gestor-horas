@@ -2,7 +2,7 @@
 
 **Solução:** Gestor de Horas Complementares
 **Turma:** ESW-T1
-**Equipe:** Gestor de Horas Complementares
+
 **Integrantes:** Enzo Amaral Santos, Fernando Santos Barbosa, Jessé Lessa Barbosa Machado, João Danilo Silva de Oliveira, João Gabriel Moreira Carvalho Araújo
 
 ## 1. Uso de inteligência artificial
