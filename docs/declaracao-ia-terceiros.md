@@ -5,9 +5,6 @@
 **Equipe:** Gestor de Horas Complementares
 **Integrantes:** Enzo Amaral Santos, Fernando Santos Barbosa, Jessé Lessa Barbosa Machado, João Danilo Silva de Oliveira, João Gabriel Moreira Carvalho Araújo
 
-> Ajuste esta declaração para refletir **exatamente** o que a equipe fez. O que está abaixo parte do uso de IA
-> para gerar a base do código; se vocês usaram IA em mais tarefas (pitch, README, ideação...), acrescente linhas.
-
 ## 1. Uso de inteligência artificial
 
 Houve uso de IA? (X) Sim ( ) Não
@@ -35,7 +32,7 @@ Houve uso de componentes de terceiros? ( ) Sim (X) Não
 Houve material produzido antes do POOALAB? (X) Sim ( ) Não
 
 **Identificação e origem:** antes desta versão, a equipe já tinha uma implementação inicial em Java (pacote `br.ucsal.pooalab.horassync`), criada pelos próprios integrantes, com as classes de domínio (Aluno, Atividade, CategoriaAtividade), as estratégias de cálculo de horas, o serviço, uma interface de menu de console e testes unitários. Essa versão foi substituída pela base atual, e o histórico dela permanece no repositório.
-**Contribuição nova realizada pela equipe:** Aplicação e análise do formulário de validação, consolidação dos gráficos, integração da interface de console, decisões de escopo e meta de 200h, preparação dos slides do pitch, gravação do vídeo de contingência, revisão e testes do projeto.]
+**Contribuição nova realizada pela equipe:** Aplicação e análise do formulário de validação, consolidação dos gráficos, integração da interface de console, decisões de escopo e meta de 200h, preparação dos slides do pitch, gravação do vídeo de contingência, revisão e testes do projeto.
 
 ## 4. Declaração da equipe
 
